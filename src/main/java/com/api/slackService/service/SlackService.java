@@ -29,7 +29,7 @@ public class SlackService {
 
             methods.chatPostMessage(request);
            
-            log.info("보냄");
+            log.info("Send Message");
         } catch (SlackApiException | IOException e) {
             log.error(e.getMessage());
         }

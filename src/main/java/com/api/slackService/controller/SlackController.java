@@ -17,7 +17,7 @@ public class SlackController {
 
     @RequestMapping("/slack")
     public String home() {
-        log.info("home controlle");
+        log.info("slack controller");
         slackService.postSlackMessage("slack message !@#!@#!@#");
         return "index";
     }
